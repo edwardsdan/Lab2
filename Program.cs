@@ -43,7 +43,16 @@ namespace Lab2
                 {
                     Console.WriteLine($"{Name}'s number ({Input}) is odd");
                 }
-                Console.WriteLine("Goodbye!");
+                Console.WriteLine("Would you like to go again? (Y/N)");
+                string response = Console.ReadLine();
+                if (response == "y" || response == "Y")
+                {
+                    Main(args);
+                }
+                else
+                {
+                    Console.WriteLine("Goodbye!");
+                }
             }
         }
     }
